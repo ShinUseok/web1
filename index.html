@@ -3,7 +3,55 @@
 <head>
     <title>Web_study_Welcome</title>
     <meta charset="utf-8">
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        #active {
+            color: red;
+        }
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        body {
+            margin: 0px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+        }
+        #grid #article {
+            padding-left: 20px;
+        }
+        
+        @media(max-width:800px) {
+            #grid {
+                display: block;
+            }
     
+            #grid ol {
+                border-right: none;
+    
+            }
+    
+            h1 {
+                border-bottom: none;
+            }
+        }
+    </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178131700-1"></script>
     <script>
@@ -19,21 +67,25 @@
 
 <body>
     <h1><a href = "index.html">WEB</a></h1>
-    <ol>
-        <li><a href = "temp1.html">HTML</a></li>
-        <li><a href="temp2.html">CSS</a></li>
-        <li><a href="temp3.html">JavaScript</a></li>
-    </ol>
-
-    <h2>WEB</h2>
-
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sQBXgccvE98" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
-        <strong> &lt;Main Page&gt; </strong>
-        <br>Choose Link
-    </p>
+    <div id = 'grid'>
+        <ol>
+            <li><a href = "temp1.html">HTML</a></li>
+            <li><a href="temp2.html">CSS</a></li>
+                <!-- style="color: darkcyan; text-decoration: underline ;">CSS</a></li> -->
+            <li><a href="temp3.html">JavaScript</a></li>
+        </ol>
+        <div id = 'article'>
+            <h2>WEB</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis animi facilis porro aspernatur voluptates hic quod, libero quibusdam explicabo labore a et. Sapiente, delectus in totam dolor vero iusto.
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sQBXgccvE98" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br>
+                <strong> &lt;Main Page&gt; </strong>
+                <br>Choose Link
+            </p>
+        </div>
+    </div>
 
     <p>
         <!-- 채팅기능 -->
@@ -50,7 +102,6 @@
             })();
         </script>
         <!--End of Tawk.to Script-->
-
     </p>
 
 

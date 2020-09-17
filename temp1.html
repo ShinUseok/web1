@@ -3,27 +3,77 @@
 <head>
     <title>Web_study_html</title>
     <meta charset="utf-8">
+    <style>
+        a {
+            color : black; 
+            text-decoration: none;
+        }
+        #active{
+            color : red;
+        }
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin : 0px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        body {
+            margin : 0px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+        }
+        #grid #article{
+            padding-left: 20px;
+        }
+
+        @media(max-width:800px){
+            #grid {
+                display: block;
+            }
+            #grid ol {
+                border-right: none;
+               
+            }
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+    </style>
 </head>
 
 
 <body>
     <h1><a href = "index.html">WEB</a></h1>
-    <ol>
-        <li><a href = "temp1.html">HTML</a></li>
-        <li><a href="temp2.html">CSS</a></li>
-        <li><a href="temp3.html">JavaScript</a></li>
-    </ol>
+    <div id = 'grid'>
+        <ol>
+            <li><a href = "temp1.html">HTML</a></li>
+            <li><a href="temp2.html">CSS</a></li>
+            <li><a href="temp3.html">JavaScript</a></li>
+        </ol>
+        <div id = 'article'>
+            <h2>HTML</h2>
 
-    <h2>HTML</h2>
-
-    <p>
-        <a href="https://www.w3.org" target="_blank" title = 'html5 specification'> Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> 
-        pages</strong> and web applications.<br>Web browsers receive HTML documents from a web server 
-        or from local storage and render them into multimedia web pages.<br> HTML describes 
-        the structure of a web page semantically and originally included cues for the appearance of
-        the document.
-        <br><img src="question_1.png" width = "50%">
-    </p>
+            <p>
+                <a href="https://www.w3.org" target="_blank" title = 'html5 specification'> Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> 
+                pages</strong> and web applications.<br>Web browsers receive HTML documents from a web server 
+                or from local storage and render them into multimedia web pages.<br> HTML describes 
+                the structure of a web page semantically and originally included cues for the appearance of
+                the document.
+                <br><img src="question_1.png" width = "50%">
+            </p>
+        </div>
+    </div>
 
     <p style = "margin-top:45px;">
         HTML elements are the building blocks of HTML pages. 
@@ -31,6 +81,23 @@
         into the rendered page. It provides a means to create structured documents by denoting 
         structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. 
         HTML elements are delineated by tags, written using angle brackets.
+    </p>
+    
+    <p>
+        <!-- 채팅기능 -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5f6079f5f0e7167d001065b4/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
     </p>
 </body>
 </html>

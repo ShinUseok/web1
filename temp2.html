@@ -3,26 +3,177 @@
 <head>
     <title>Web_study_CSS</title>
     <meta charset="utf-8">
+    <style>
+        a {
+            color : black; 
+            text-decoration: none;
+        }
+        #active{
+            color : red;
+        }
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin : 0px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        body {
+            margin : 0px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+        }
+        #grid #article{
+            padding-left: 20px;
+        }
+
+        @media(max-width:800px){
+            #grid {
+                display: block;
+            }
+            #grid ol {
+                border-right: none;
+               
+            }
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+    </style>
 </head>
 
 
 <body>
     <h1><a href = "index.html">WEB</a></h1>
-    <ol>
-        <li><a href = "temp1.html">HTML</a></li>
-        <li><a href="temp2.html">CSS</a></li>
-        <li><a href="temp3.html">JavaScript</a></li>
-    </ol>
-
-    <h2>CSS</h2>
-
-    <p>
-        <strong>CSS</strong>
-        <br><img src="question_2.png" width="50%">
-    </p>
+    <div id = 'grid'>
+        <ol>
+            <li><a href="temp1.html">HTML</a></li>
+            <li><a href="temp2.html" id = 'active'>CSS</a></li>
+            <li><a href="temp3.html">JavaScript</a></li>
+        </ol>
+        <div id = 'article'>
+            <h2>CSS</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A accusamus placeat quia saepe cum odio obcaecati, sint molestiae praesentium, quasi quidem voluptate perferendis, adipisci officiis magnam corrupti ab dignissimos eveniet.
+            <p>
+                <strong>[CSS]</strong>
+                <br><img src="question_2.png" width="50%">
+                <br>[CSS]
+            </p>
+        </div>
+    </div>
 
     <p style = "margin-top:45px;">
         CSS Study
     </p>
+
+    <p>
+        <!-- 채팅기능 -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5f6079f5f0e7167d001065b4/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </p>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web_study_CSS</title>
+    <meta charset="utf-8">
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #active {
+            color: red;
+        }
+
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        
+
+        body {
+            margin: 0px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+        }
+
+        #nav {
+            border-right: 1px solid grey;
+        }   
+
+        #nav ol {
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+
+        #article {
+            /* border-left: 1px solid grey; */
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id = 'grid'>
+        <div id = 'nav'>
+            <ol>
+                <li><a href="temp1.html">HTML</a></li>
+                <li><a href="temp2.html" id='active'>CSS</a></li>
+                <li><a href="temp3.html">JavaScript</a></li>
+            </ol>
+        </div>
+
+        <div id = 'article'>
+            <h2>CSS</h2>
+            <p>
+                <strong>[CSS]</strong>
+                <br><img src="question_2.png" width="50%">
+                <br>[CSS]
+            </p>
+            <p style="margin-top:45px;">
+                CSS Study
+            </p>
+        </div>
+    </div>
+</body>
+</html> -->
+    
